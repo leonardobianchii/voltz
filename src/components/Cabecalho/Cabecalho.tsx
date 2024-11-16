@@ -29,16 +29,16 @@ export default function Navbar() {
                 </Link>
                 
                 <nav className="flex items-center space-x-8">
-                    <Link href="/informacoes" className="text-white hover:text-blue-500 relative group">
-                        Conheça
-                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all"></span>
-                    </Link>
-                    <Link href="/produto" className="text-white hover:text-blue-500 relative group">
-                        Serviços
+                    <Link href="/" className="text-white hover:text-blue-500 relative group">
+                        Home
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all"></span>
                     </Link>
                     <Link href="/about" className="text-white hover:text-blue-500 relative group">
                         Sobre nós
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all"></span>
+                    </Link>
+                    <Link href="/produto" className="text-white hover:text-blue-500 relative group">
+                        Serviços
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 group-hover:w-full transition-all"></span>
                     </Link>
                     <Link href="/login" className="text-white bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition-colors relative group">

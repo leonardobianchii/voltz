@@ -58,7 +58,7 @@ export default function Home() {
                         <p className="mb-6">
                         Nossos serviços oferecem soluções completas para a mobilidade elétrica sustentável. Com estações de carregamento solar, proporcionamos acesso à energia limpa para veículos elétricos em áreas públicas e rurais. Através de tecnologia de monitoramento inteligente, garantimos operação eficiente e contínua. Além disso, oferecemos suporte para empresas e comunidades, promovendo a sustentabilidade e facilitando a transição para uma mobilidade mais verde e acessível.
                         </p>
-                        <Link href="/servicos" className="btn bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors">
+                        <Link href="/produto" className="btn bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors">
                             Saiba mais aqui
                         </Link>
                     </div>
@@ -69,7 +69,7 @@ export default function Home() {
             <section className="py-16">
                 <div className="container mx-auto text-center">
                     <h3 className="text-4xl font-bold mb-6">O que dizem sobre?</h3>
-                    <p className="mb-8">Veja alguns comentários sobre o uso de nossas intalações</p>
+                    <p className="mb-8">Veja alguns comentários sobre o uso de nossas instalações</p>
                     <div className="flex flex-wrap justify-center">
                         <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
                             <Image src="/img/icone_fazendeiro.png" alt="icone fazendeiro" width={80} height={80} className="mx-auto rounded-full" />

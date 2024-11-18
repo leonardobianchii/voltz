@@ -60,7 +60,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz_image3.png"
               alt="Recife artificial"
               width={400}
               height={300}

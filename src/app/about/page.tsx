@@ -47,7 +47,7 @@ export default function About() {
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz_image2.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}
@@ -63,7 +63,7 @@ export default function About() {
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz_image5.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}
@@ -149,7 +149,7 @@ export default function About() {
               <p>Full Stack Developer</p>
               <div className="social-links mt-7 underline">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/AngelloTDC"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-1 text-white"
@@ -157,7 +157,7 @@ export default function About() {
                   GitHub
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/angello_tdc/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-1 text-white"
@@ -165,7 +165,7 @@ export default function About() {
                   Instagram
                 </a>
                 <a
-                  href="https://www.linkedin.com/"
+                  href="https://www.linkedin.com/in/angello-turano-1321b4212/ "
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-1 text-white"
@@ -189,7 +189,7 @@ export default function About() {
               <p>Back-End Developer</p>
               <div className="social-links mt-7 underline">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/C4zin"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-1 text-white"
@@ -197,7 +197,7 @@ export default function About() {
                   GitHub
                 </a>
                 <a
-                  href="https://www.instagram.com/"
+                  href="https://www.instagram.com/c4zinnn/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="mx-1 text-white"

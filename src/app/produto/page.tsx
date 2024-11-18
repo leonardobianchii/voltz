@@ -44,7 +44,7 @@ export default function Produto() {
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz_image6.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}
@@ -60,7 +60,7 @@ export default function Produto() {
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz_image7.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}

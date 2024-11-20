@@ -55,7 +55,7 @@ export default function Home() {
               href="/about"
               className="btn bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors"
             >
-              Saiba mais aqui
+              Descubra como funciona
             </Link>
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
@@ -111,7 +111,7 @@ export default function Home() {
         <div className="container mx-auto text-center">
           <h3 className="text-4xl font-bold mb-6">O que dizem sobre?</h3>
           <p className="mb-8">
-            Veja alguns comentários sobre o uso de nossas instalações
+          Veja histórias de Impacto Real
           </p>
           <div className="flex flex-wrap justify-center">
             <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">

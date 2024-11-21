@@ -24,7 +24,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/">
-          <Image src="/img/voltz_logo.png" alt="Logo" width={70} height={70} />
+          <Image src="/img/voltz-logo.png" alt="Logo" width={70} height={70} />
         </Link>
 
         <nav className="flex items-center space-x-8">

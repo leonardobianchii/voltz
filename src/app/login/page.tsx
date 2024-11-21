@@ -56,7 +56,7 @@ const Login = () => {
     <div>
       <div className="relative">
         <Image
-          src="/img/voltz_Banner.png"
+          src="/img/voltz-banner.png"
           alt="Banner Image"
           layout="responsive"
           width={1920}

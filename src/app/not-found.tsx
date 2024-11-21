@@ -10,7 +10,7 @@ export default function NotFoundPage() {
     <div className="min-h-screen bg-gray-900 text-white flex flex-col justify-center items-center text-center">
       <div className="mt-24">
         <Image
-          src="/img/voltz_Banner.png"
+          src="/img/voltz-banner.png"
           alt="Voltz Banner"
           width={575}
           height={200}

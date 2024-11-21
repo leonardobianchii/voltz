@@ -56,7 +56,7 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image3.png"
+              src="/img/voltz-image3.png"
               alt="Recife artificial"
               width={400}
               height={300}
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image.png"
+              src="/img/voltz-image.png"
               alt="Recife artificial"
               width={400}
               height={300}
@@ -108,7 +108,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center">
             <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
               <Image
-                src="/img/icone_fazendeiro.png"
+                src="/img/icone-fazendeiro.png"
                 alt="icone fazendeiro"
                 width={80}
                 height={80}
@@ -124,7 +124,7 @@ export default function Home() {
             </div>
             <div className=" bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
               <Image
-                src="/img/icone_pessoa.png"
+                src="/img/icone-pessoa.png"
                 alt="icone coordenador"
                 width={80}
                 height={80}
@@ -140,7 +140,7 @@ export default function Home() {
             </div>
             <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
               <Image
-                src="/img/icone_empresario.png"
+                src="/img/icone-empresario.png"
                 alt="icone mergulhador"
                 width={80}
                 height={80}
@@ -166,28 +166,28 @@ export default function Home() {
           <p className="mb-8">Conheça as empresas que apoiam o projeto Voltz</p>
           <div className="flex flex-wrap justify-around items-center">
             <Image
-              src="/img/fia_logo.png"
+              src="/img/fia-logo.png"
               alt="Logo Fia"
               width={150}
               height={150}
               quality={100}
             />
             <Image
-              src="/img/fiap_logo.png"
+              src="/img/fiap-logo.png"
               alt="Logo FIAP"
               width={150}
               height={150}
               quality={100}
             />
             <Image
-              src="/img/sap_logo.png"
+              src="/img/sap-logo.png"
               alt="Logo Sap"
               width={150}
               height={150}
               quality={100}
             />
             <Image
-              src="/img/mahindra_logo.png"
+              src="/img/mahindra-logo.png"
               alt="Logo Mahindra"
               width={150}
               height={150}

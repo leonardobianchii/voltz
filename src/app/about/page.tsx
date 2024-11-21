@@ -5,7 +5,7 @@ export default function About() {
     <div>
       <div className="relative">
         <Image
-          src="/img/voltz_Banner.png"
+          src="/img/voltz-banner.png"
           alt="Banner Image"
           layout="responsive"
           width={1920}
@@ -44,7 +44,7 @@ export default function About() {
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image2.png"
+              src="/img/voltz-image2.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}
@@ -59,7 +59,7 @@ export default function About() {
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
             <Image
-              src="/img/voltz_image5.png"
+              src="/img/voltz-image5.png"
               alt="Imagem VoltzEco"
               width={400}
               height={300}

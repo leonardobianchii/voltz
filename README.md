@@ -1,27 +1,24 @@
-# Voltz - Energia Sustentável para um Futuro Melhor 🌱
+# Voltz - Energia sustentável para um futuro melhor
 
-Bem-vindo ao repositório do **Voltz**, um projeto focado em energia sustentável, que oferece soluções de carregamento solar para veículos elétricos e ferramentas para monitoramento de consumo de energia de maneira acessível e prática.
+Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentável, que oferece soluções de carregamento por energia solar!
 
+## Tecnologias utilizadas
 
-## 🛠️ Tecnologias Utilizadas
-
-- **Next.js**: Framework React para construção de aplicações web rápidas e escaláveis.
-- **TailwindCSS**: Framework CSS para estilização rápida e responsiva.
-- **TypeScript**: Tipagem estática para melhorar a qualidade do código.
-- **Node.js**: Ambiente de execução JavaScript no backend.
-- **PostCSS**: Gerenciamento e processamento de estilos.
-- **ESLint**: Ferramenta para linting e padronização do código.
-
-
-## 📂 Estrutura do Projeto
-
-    Abaixo está uma descrição da estrutura principal do projeto:
+- **Next.js**
+- **TailwindCSS**
+- **TypeScript**
+- **Node.js**
+- **PostCSS**
+- **ESLint**
+  
+## Estrutura do projeto
 
 ### **`/src`**
 
-    Diretório principal contendo todo o código do projeto.
+- **`/src`**: Diretório principal contendo todo o código do projeto.
 
 #### **`/app`**
+
 - **`about/page.tsx`**: Página com informações sobre o projeto.
 - **`admin/page.tsx`**: Página administrativa para controle do sistema.
 - **`api/saldo/route.ts`**: API para gerenciamento de saldo do usuário.
@@ -30,91 +27,68 @@ Bem-vindo ao repositório do **Voltz**, um projeto focado em energia sustentáve
 - **`produto/page.tsx`**: Página que detalha os serviços e produtos oferecidos.
 
 #### **`/components`**
+
 - **`Cabecalho.tsx`**: Componente para o cabeçalho do site, incluindo a navegação.
 - **`Rodape.tsx`**: Componente para o rodapé do site.
 
-#### Outros Arquivos Importantes
-- **`globals.css`**: Estilização global para o projeto.
-- **`layout.tsx`**: Layout padrão usado nas páginas.
-- **`tailwind.config.js`**: Configurações do TailwindCSS.
+#### Outros arquivos importantes
+
+- **`globals.css`**: imports do tailwind para estilização do projeto.
+- **`layout.tsx`**: Layout usado nas páginas.
+- **`tailwind.config.js`**: Configurações do TailwindCSS (estilização do projeto).
 - **`next.config.mjs`**: Configurações do Next.js.
 
+------
 
-## 🚀 Como Rodar o Projeto
+### Deploy na vercel
 
-    Siga as etapas abaixo para configurar e rodar o projeto localmente:
+- **`LINK:`** [https://voltz-eta.vercel.app](https://voltz-eta.vercel.app)
+  
+------
 
-### Pré-requisitos
-    Certifique-se de ter instalado:
-    - Node.js (>=16.x)
-    - npm ou yarn
+### Link para o vídeo de apresentação do Front-End
 
-### Instalação
+- **`FALTA COLOCAR AQUI !!!!!!!!!!!!`**
 
-1. **Clone o repositório**:
-   
-   git clone https://github.com/leonardobianchii/voltz
-   cd voltz
+------
 
-### Instale as dependências:
+### Links para os repositório das API's e do Front-End 
+(script para o banco de dados está incluso em ambas as API's)
 
-    npm install
-    Configuração do Ambiente: Crie um arquivo .env.local na raiz do projeto e configure as variáveis de ambiente necessárias, como a URL da API e configurações de banco de dados.
+- **`FRONT:`** [https://github.com/leonardobianchii/voltz](https://github.com/leonardobianchii/voltz)
 
-### Inicie o Servidor de Desenvolvimento:
+- **`PYTHON:`** [https://github.com/leonardobianchii/voltz_py](https://github.com/leonardobianchii/voltz_py)
 
+- **`JAVA:`** [https://github.com/AngelloTDC/voltz-java](https://github.com/AngelloTDC/voltz-java)
 
-    npm run dev
-    Acesse o Projeto: Abra http://localhost:3000 no navegador.
+------
 
-### 🌟 Funcionalidades
+### Link de apresentação do projeto de Python 
+(caso queira conferir o funcionamento)
 
-### Carregamento Solar para VEs:
+- **`LINK:`** [https://youtu.be/ZmoR8E8wYGI](https://youtu.be/ZmoR8E8wYGI)
 
-    Sistema integrado para estações de carregamento movidas a energia solar.
-    Monitoramento de Energia e Gastos:
+------
 
-    Interface intuitiva para monitorar o consumo de energia e o histórico de recargas.
-    Design Responsivo:
+### Link de apresentação do projeto de Java 
+(caso queira conferir o funcionamento)
 
-    Interface adaptada para desktop e dispositivos móveis.
-    Administração e Controle:
+- **`FALTA COLOCAR AQUI !!!!!!!!!!!!`**
 
-    Área administrativa para gerenciar cadastros e funcionalidades do sistema.
+------
 
-### 📦 Scripts Disponíveis
+### Link de apresentação do projeto Voltz! 
+(feito para demonstrar de forma mais visual o projeto)
 
-    npm run dev: Inicia o servidor de desenvolvimento.
-    npm run build: Cria a versão de produção do projeto.
-    npm run start: Inicia o servidor em produção.
-    npm run lint: Verifica e corrige problemas de linting no código.
+- **`LINK:`** [https://youtu.be/KKU3hpOQ470](https://youtu.be/KKU3hpOQ470)
 
-### 🌍 Deploy
+------
 
-    Para fazer o deploy, recomendamos o uso da Vercel (plataforma para aplicações Next.js). Basta conectar seu repositório ao painel da Vercel e configurar as variáveis de ambiente.
+### Contato para falar sobre o projeto
 
+- **`EMAIL:`** voltzenergia01@gmail.com
 
-### 🤝 Contribuição
+- **`TELEFONE`**  (11) 98683-9381
 
-    Contribuições são bem-vindas! Para contribuir:
-
-    Faça um fork do repositório.
-    Crie uma branch para a sua feature:
-
-    git checkout -b minha-feature
-    Commit suas alterações:
-
-    git commit -m "Minha nova feature"
-    Faça o push para a sua branch:
-
-    git push origin minha-feature
-    Abra um Pull Request.
-
-### 📧 Contato
-
-    Caso tenha dúvidas ou sugestões, entre em contato:
-
-    E-mail: voltzenergia01@gmail.com
-    Telefone: (11) 98683-9381
 
 

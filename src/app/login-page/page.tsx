@@ -1,31 +1,17 @@
 "use client";
 
-import { Abastecimento, UsuarioLogado, Transacao } from "../../../types";
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import {
-  fetchSaldo,
-  fetchHistoricoTransacoes,
-  fetchHistoricoAbastecimento,
-  realizarRecarga,
-} from "../api/saldo/route";
-
+import { fetchSaldo, realizarRecarga } from "../api/saldo/route";
+import { UsuarioLogado } from "../../../types";
 
 export default function Dashboard() {
   const [usuarioLogado, setUsuarioLogado] = useState<UsuarioLogado | null>(
     null
   );
   const [saldo, setSaldo] = useState<number | null>(null);
-  const [historicoTransacoes, setHistoricoTransacoes] = useState<Transacao[]>(
-    []
-  );
-  const [historicoAbastecimento, setHistoricoAbastecimento] = useState<
-    Abastecimento[]
-  >([]);
   const [carregando, setCarregando] = useState({
     saldo: true,
-    transacoes: true,
-    abastecimento: true,
   });
   const [modalAberto, setModalAberto] = useState(false);
   const [tipoTransacao, setTipoTransacao] = useState<string>("credito");
@@ -55,30 +41,6 @@ export default function Dashboard() {
       setSaldo(0);
     } finally {
       setCarregando((prev) => ({ ...prev, saldo: false }));
-    }
-
-    try {
-      const transacoesData = await fetchHistoricoTransacoes(
-        usuarioLogado.id_cliente
-      );
-      setHistoricoTransacoes(transacoesData.historico_transacoes || []);
-    } catch {
-      setHistoricoTransacoes([]);
-    } finally {
-      setCarregando((prev) => ({ ...prev, transacoes: false }));
-    }
-
-    try {
-      const abastecimentoData = await fetchHistoricoAbastecimento(
-        usuarioLogado.id_cliente
-      );
-      setHistoricoAbastecimento(
-        abastecimentoData.historico_abastecimento || []
-      );
-    } catch {
-      setHistoricoAbastecimento([]);
-    } finally {
-      setCarregando((prev) => ({ ...prev, abastecimento: false }));
     }
   }, [usuarioLogado, router]);
 
@@ -140,7 +102,49 @@ export default function Dashboard() {
               </button>
             </div>
           </div>
-          {/* Modal de recarga e demais componentes mantidos */}
+
+          {/* Modal de Recarga */}
+          {modalAberto && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+              <div className="bg-white text-black p-6 rounded shadow-lg w-96">
+                <h2 className="text-xl font-bold mb-4">Realizar Recarga</h2>
+                <label className="block mb-2">
+                  Tipo de Transação:
+                  <select
+                    value={tipoTransacao}
+                    onChange={(e) => setTipoTransacao(e.target.value)}
+                    className="w-full p-2 border rounded"
+                  >
+                    <option value="credito">Crédito</option>
+                    <option value="debito">Débito</option>
+                  </select>
+                </label>
+                <label className="block mb-2">
+                  Valor (R$):
+                  <input
+                    type="number"
+                    value={valorTransacao}
+                    onChange={(e) => setValorTransacao(e.target.value)}
+                    className="w-full p-2 border rounded"
+                  />
+                </label>
+                <div className="flex justify-end mt-4">
+                  <button
+                    onClick={() => setModalAberto(false)}
+                    className="bg-gray-500 text-white py-2 px-4 rounded mr-2"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    onClick={handleRecarga}
+                    className="bg-blue-500 text-white py-2 px-4 rounded"
+                  >
+                    Creditar Saldo
+                  </button>
+                </div>
+              </div>
+            </div>
+          )}
         </>
       ) : (
         <p>Redirecionando para login...</p>

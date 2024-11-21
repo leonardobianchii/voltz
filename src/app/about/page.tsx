@@ -15,10 +15,9 @@ export default function About() {
           priority
           className="w-full h-[600px] object-cover"
         />
-        {/* Overlay preto */}
+
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
-        {/* Texto centralizado no banner */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
           <h1 className="text-8xl font-bold mb-4">Conheça nosso projeto</h1>
           <p className="text-xl mb-6">
@@ -27,7 +26,6 @@ export default function About() {
         </div>
       </div>
 
-      {/* "Conheça nosso projeto" Section */}
       <section className="py-16">
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8">
@@ -58,7 +56,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* "Nossos serviços" Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
@@ -88,7 +85,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* "Criadores" Section */}
       <section>
         <div>
           <h2 className="text-4xl font-bold text-center mb-8 mt-8">

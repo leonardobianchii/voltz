@@ -30,7 +30,6 @@ const Login = () => {
         return;
       }
 
-      // Caso não seja administrador, processar login do usuário normal
       const usuario = await loginUsuario(formData);
       localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
       setMensagemSucesso("Login realizado com sucesso!");

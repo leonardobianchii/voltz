@@ -4,8 +4,8 @@ export default function Rodape() {
       <div className="flex flex-wrap justify-around mx-auto p-5">
         <div className="flex-1 min-w-[300px] m-2">
           <h3 className="mb-2">Contato</h3>
-          <p>Email: voltzenergia@gmail.com</p>
-          <p>Telefone: (11) 99412-3559</p>
+          <p>Email: voltzenergia01@gmail.com</p>
+          <p>Telefone: (11) 98683-9381</p>
         </div>
         <div className="flex-1 min-w-[300px] m-2">
           <h3 className="mb-2">Redes Sociais</h3>

@@ -114,7 +114,7 @@ Bem-vindo ao repositório do **Voltz**, um projeto focado em energia sustentáve
 
     Caso tenha dúvidas ou sugestões, entre em contato:
 
-    E-mail: voltzenergia@gmail.com
-    Telefone: (11) 99412-3559
+    E-mail: voltzenergia01@gmail.com
+    Telefone: (11) 98683-9381
 
 

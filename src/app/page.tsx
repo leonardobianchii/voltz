@@ -4,7 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="">
-      {/* Banner Section */}
       <div className="relative">
         <Image
           src="/img/voltz_Banner.png"
@@ -17,10 +16,8 @@ export default function Home() {
           priority
           className="w-full h-[600px] object-cover"
         />
-        {/* Overlay preto */}
         <div className="absolute inset-0 bg-black opacity-80"></div>
 
-        {/* Texto centralizado no banner */}
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-20">
           <h1 className="text-8xl font-bold mb-4">Voltz</h1>
           <p className="text-xl mb-6">
@@ -36,7 +33,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* "Conheça nosso projeto" Section */}
       <section className="py-16">
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8">
@@ -71,7 +67,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "Nossos serviços" Section */}
       <section className="py-16 bg-gray-100">
         <div className="container mx-auto flex flex-wrap items-center">
           <div className="w-full md:w-1/2 px-8 order-2 md:order-1 mt-8 md:mt-0 flex justify-center">
@@ -106,7 +101,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "O que dizem sobre?" Section */}
       <section className="py-16">
         <div className="container mx-auto text-center">
           <h3 className="text-4xl font-bold mb-6">O que dizem sobre?</h3>
@@ -166,7 +160,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* "Nossos parceiros" Section */}
       <section className="parceiros py-16 bg-gray-100">
         <div className="container mx-auto text-center">
           <h3 className="text-4xl font-bold mb-4">Nossos parceiros</h3>

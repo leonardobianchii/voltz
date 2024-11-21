@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation"; // Importar o hook useRouter
+import { useRouter } from "next/navigation"; 
 import { cadastroUsuario } from "../api/saldo/route";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ const Cadastro = () => {
 
   const [mensagemSucesso, setMensagemSucesso] = useState("");
   const [erro, setErro] = useState("");
-  const router = useRouter(); // Inicializar o hook useRouter
+  const router = useRouter(); 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;

@@ -74,8 +74,6 @@ export const realizarRecarga = async (dados: {
   return await response.json();
 };
 
-// Consumindo API java
-
 export const fetchClientes = async () => {
   try {
     const response = await fetch("http://localhost:8080/clientes");

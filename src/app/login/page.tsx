@@ -4,11 +4,15 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { loginUsuario } from "../api/saldo/route";
 import Image from "next/image";
+import { LoginUsuario } from "../../../types";
 
 const Login = () => {
-  const [formData, setFormData] = useState({ login: "", senha: "" });
-  const [erro, setErro] = useState("");
-  const [mensagemSucesso, setMensagemSucesso] = useState("");
+  const [formData, setFormData] = useState<LoginUsuario>({
+    login: "",
+    senha: "",
+  });
+  const [erro, setErro] = useState<string>("");
+  const [mensagemSucesso, setMensagemSucesso] = useState<string>("");
   const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -38,8 +42,12 @@ const Login = () => {
       setTimeout(() => {
         router.push("/login-page");
       }, 1000);
-    } catch (err: any) {
-      setErro(err.message || "Erro ao realizar login.");
+    } catch (err) {
+      if (err instanceof Error) {
+        setErro(err.message || "Erro ao realizar login.");
+      } else {
+        setErro("Erro inesperado. Tente novamente.");
+      }
       setMensagemSucesso("");
     }
   };

@@ -1,26 +1,32 @@
-export const cadastroUsuario = async (dados: any) => {
+import { CadastroUsuario, LoginUsuario, UsuarioResponse } from "../../../../types";
+
+export const cadastroUsuario = async (dados: CadastroUsuario): Promise<UsuarioResponse> => {
   const response = await fetch(`http://127.0.0.1:5000/api/cadastro`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(dados),
   });
+
   if (!response.ok) {
     const error = await response.json();
     throw new Error(error.erro || "Erro ao realizar cadastro.");
   }
+
   return await response.json();
 };
 
-export const loginUsuario = async (dados: any) => {
+export const loginUsuario = async (dados: LoginUsuario): Promise<UsuarioResponse> => {
   const response = await fetch(`http://127.0.0.1:5000/api/login`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(dados),
   });
+
   if (!response.ok) {
     const error = await response.json();
     throw new Error(error.erro || "Erro ao realizar login.");
   }
+
   return await response.json();
 };
 

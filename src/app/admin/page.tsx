@@ -2,22 +2,23 @@
 
 import { useState, useEffect } from "react";
 import { fetchClientes } from "../api/saldo/route";
+import { Cliente } from "../../../types";
 
 export default function AdminDashboard() {
-  const [clientes, setClientes] = useState<any[]>([]);
+  const [clientes, setClientes] = useState<Cliente[]>([]);
   const [carregando, setCarregando] = useState(true);
-  const [erro, setErro] = useState("");
+  const [erro, setErro] = useState<string>("");
 
   useEffect(() => {
     const carregarClientes = async () => {
       try {
-        const data = await fetchClientes();
+        const data: Cliente[] = await fetchClientes();
         setClientes(data);
-        setErro("");
-      } catch (error) {
-        setErro("Erro ao carregar os clientes.");
+        setErro(""); 
+      } catch {
+        setErro("Erro ao carregar os clientes."); 
       } finally {
-        setCarregando(false);
+        setCarregando(false); 
       }
     };
 

@@ -116,10 +116,10 @@ export default function Home() {
               />
               <p className="font-semibold text-xl mt-4">Morador Rural, Jorge</p>
               <p className="mt-2">
-                "Aqui no campo, sempre foi difícil encontrar pontos de
+                &quot;Aqui no campo, sempre foi difícil encontrar pontos de
                 carregamento. As estações solares do Voltz trouxeram uma solução
                 sustentável e eficiente, garantindo que eu carregue meu carro
-                com energia limpa."
+                com energia limpa.&quot;
               </p>
             </div>
             <div className=" bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
@@ -133,9 +133,9 @@ export default function Home() {
               />
               <p className="font-semibold text-xl mt-4">Cidadão, Rogerio</p>
               <p className="mt-2">
-                "A solução de carregamento solar do Voltz é perfeita para a
+                &quot;A solução de carregamento solar do Voltz é perfeita para a
                 cidade. Carregar meu carro com energia renovável enquanto estou
-                em áreas públicas é prático e sustentável!"
+                em áreas públicas é prático e sustentável!&quot;
               </p>
             </div>
             <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
@@ -150,10 +150,10 @@ export default function Home() {
                 Dono de uma instalação Voltz, Julio Souza
               </p>
               <p className="mt-2">
-                "Como responsável pela instalação, posso garantir que o sistema
+                &quot;Como responsável pela instalação, posso garantir que o sistema
                 de monitoramento via IoT e as baterias de 20 kWh garantem
                 operação contínua e eficiente, mesmo em dias nublados ou à
-                noite."
+                noite.&quot;
               </p>
             </div>
           </div>

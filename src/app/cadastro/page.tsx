@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation"; 
+import { useRouter } from "next/navigation";
 import { cadastroUsuario } from "../api/saldo/route";
 import Image from "next/image";
+import { FormDataCadastro } from "../../../types";
 
 const Cadastro = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormDataCadastro>({
     nome: "",
     email: "",
     telefone: "",
@@ -14,9 +15,9 @@ const Cadastro = () => {
     senha: "",
   });
 
-  const [mensagemSucesso, setMensagemSucesso] = useState("");
-  const [erro, setErro] = useState("");
-  const router = useRouter(); 
+  const [mensagemSucesso, setMensagemSucesso] = useState<string>("");
+  const [erro, setErro] = useState<string>("");
+  const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -34,8 +35,12 @@ const Cadastro = () => {
       setTimeout(() => {
         router.push("/login");
       }, 1000);
-    } catch (err: any) {
-      setErro(err.message);
+    } catch (err: unknown) {
+      if (err instanceof Error) {
+        setErro(err.message);
+      } else {
+        setErro("Erro inesperado. Tente novamente.");
+      }
       setMensagemSucesso("");
     }
   };

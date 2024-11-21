@@ -67,4 +67,19 @@ export const fetchSaldo = async (id_cliente: number) => {
   
     return await response.json();
   };
-  
+
+  // Consumindo API java
+
+  export const fetchClientes = async () => {
+    try {
+        const response = await fetch("http://localhost:8080/clientes");
+        if (!response.ok) {
+            throw new Error(`Erro ao buscar clientes: ${response.status} - ${response.statusText}`);
+        }
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Erro no fetchClientes:"); 
+        throw error;
+    }
+};

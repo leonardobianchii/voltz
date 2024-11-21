@@ -18,7 +18,19 @@ const Login = () => {
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+
         try {
+            if (formData.login === "admin" && formData.senha === "admin") {
+                setMensagemSucesso("Login de administrador realizado com sucesso!");
+                setErro("");
+
+                setTimeout(() => {
+                    router.push("/admin");
+                }, 1000);
+                return;
+            }
+
+            // Caso não seja administrador, processar login do usuário normal
             const usuario = await loginUsuario(formData);
             localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
             setMensagemSucesso("Login realizado com sucesso!");
@@ -28,7 +40,7 @@ const Login = () => {
                 router.push("/login-page");
             }, 1000);
         } catch (err: any) {
-            setErro(err.message);
+            setErro(err.message || "Erro ao realizar login.");
             setMensagemSucesso("");
         }
     };

@@ -15,7 +15,7 @@ Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentáve
 
 ### **`/src`**
 
-Diretório principal contendo todo o código do projeto.
+- **`/src`**: Diretório principal contendo todo o código do projeto.
 
 #### **`/app`**
 

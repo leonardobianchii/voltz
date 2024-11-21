@@ -33,13 +33,14 @@ export default function Produto() {
             <h3 className="text-4xl font-bold mb-4">Recarga rápida e facil!</h3>
             <p className="mb-6">
               Com a Voltz, recarregar sua conta é simples e flexível. Você pode
-              adicionar créditos diretamente na estação de recarga, utilizando métodos de
-              pagamento como cartão de crédito ou débito, ou acessar nosso site, atraves do seu cadastro ou login
-              e fazer a recarga de onde estiver. Na plataforma
-              online, é possível acompanhar seu saldo em tempo real e garantir
-              que nunca falte energia para carregar seu veículo. Pensando na sua
-              conveniência, nossa solução oferece praticidade para quem busca
-              mobilidade elétrica sustentável de forma fácil e acessível.
+              adicionar créditos diretamente na estação de recarga, utilizando
+              métodos de pagamento como cartão de crédito ou débito, ou acessar
+              nosso site, atraves do seu cadastro ou login e fazer a recarga de
+              onde estiver. Na plataforma online, é possível acompanhar seu
+              saldo em tempo real e garantir que nunca falte energia para
+              carregar seu veículo. Pensando na sua conveniência, nossa solução
+              oferece praticidade para quem busca mobilidade elétrica
+              sustentável de forma fácil e acessível.
             </p>
           </div>
           <div className="w-full md:w-1/2 px-8 mt-8 md:mt-0 flex justify-center">

@@ -110,9 +110,7 @@ export default function Home() {
       <section className="py-16">
         <div className="container mx-auto text-center">
           <h3 className="text-4xl font-bold mb-6">O que dizem sobre?</h3>
-          <p className="mb-8">
-          Veja histórias de Impacto Real
-          </p>
+          <p className="mb-8">Veja histórias de Impacto Real</p>
           <div className="flex flex-wrap justify-center">
             <div className="bg-blue-100 p-6 rounded-lg text-center w-80 m-4 transition duration-300 hover:bg-blue-600 hover:text-white">
               <Image

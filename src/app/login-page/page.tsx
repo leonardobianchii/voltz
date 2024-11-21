@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -13,7 +13,9 @@ export default function Dashboard() {
   const [usuarioLogado, setUsuarioLogado] = useState<any | null>(null);
   const [saldo, setSaldo] = useState<number | null>(null);
   const [historicoTransacoes, setHistoricoTransacoes] = useState<any[]>([]);
-  const [historicoAbastecimento, setHistoricoAbastecimento] = useState<any[]>([]);
+  const [historicoAbastecimento, setHistoricoAbastecimento] = useState<any[]>(
+    []
+  );
   const [carregando, setCarregando] = useState({
     saldo: true,
     transacoes: true,
@@ -50,7 +52,9 @@ export default function Dashboard() {
     }
 
     try {
-      const transacoesData = await fetchHistoricoTransacoes(usuarioLogado.id_cliente);
+      const transacoesData = await fetchHistoricoTransacoes(
+        usuarioLogado.id_cliente
+      );
       setHistoricoTransacoes(transacoesData.historico_transacoes || []);
     } catch {
       setHistoricoTransacoes([]);
@@ -59,8 +63,12 @@ export default function Dashboard() {
     }
 
     try {
-      const abastecimentoData = await fetchHistoricoAbastecimento(usuarioLogado.id_cliente);
-      setHistoricoAbastecimento(abastecimentoData.historico_abastecimento || []);
+      const abastecimentoData = await fetchHistoricoAbastecimento(
+        usuarioLogado.id_cliente
+      );
+      setHistoricoAbastecimento(
+        abastecimentoData.historico_abastecimento || []
+      );
     } catch {
       setHistoricoAbastecimento([]);
     } finally {
@@ -115,7 +123,11 @@ export default function Dashboard() {
                 {carregando.saldo ? (
                   "Carregando..."
                 ) : (
-                  <span className={`text-${saldo && saldo > 0 ? "green-500" : "gray-500"}`}>
+                  <span
+                    className={`text-${
+                      saldo && saldo > 0 ? "green-500" : "gray-500"
+                    }`}
+                  >
                     R${saldo?.toFixed(2) || "0.00"}
                   </span>
                 )}
@@ -172,14 +184,17 @@ export default function Dashboard() {
           )}
 
           <div className="w-full max-w-4xl mt-8 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Histórico de Transações</h3>
+            <h3 className="text-2xl font-semibold mb-4">
+              Histórico de Transações
+            </h3>
             {carregando.transacoes ? (
               <p className="text-gray-500">Carregando...</p>
             ) : historicoTransacoes.length > 0 ? (
               <ul className="list-disc pl-5">
                 {historicoTransacoes.map((transacao, index) => (
                   <li key={index} className="text-gray-300">
-                    Tipo: {transacao.tipo}, Valor: R${transacao.valor.toFixed(2)}, Data: {transacao.data}
+                    Tipo: {transacao.tipo}, Valor: R$
+                    {transacao.valor.toFixed(2)}, Data: {transacao.data}
                   </li>
                 ))}
               </ul>
@@ -189,14 +204,18 @@ export default function Dashboard() {
           </div>
 
           <div className="w-full max-w-4xl mt-8 bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h3 className="text-2xl font-semibold mb-4">Histórico de Abastecimento</h3>
+            <h3 className="text-2xl font-semibold mb-4">
+              Histórico de Abastecimento
+            </h3>
             {carregando.abastecimento ? (
               <p className="text-gray-500">Carregando...</p>
             ) : historicoAbastecimento.length > 0 ? (
               <ul className="list-disc pl-5">
                 {historicoAbastecimento.map((abastecimento, index) => (
                   <li key={index} className="text-gray-300">
-                    Base: {abastecimento.base || "Desconhecida"}, Energia: {abastecimento.energia_utilizada.toFixed(2)} kWh, Custo: R${abastecimento.custo.toFixed(2)}, Data: {abastecimento.data}
+                    Base: {abastecimento.base || "Desconhecida"}, Energia:{" "}
+                    {abastecimento.energia_utilizada.toFixed(2)} kWh, Custo: R$
+                    {abastecimento.custo.toFixed(2)}, Data: {abastecimento.data}
                   </li>
                 ))}
               </ul>

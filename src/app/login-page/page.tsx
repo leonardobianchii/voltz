@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
-import { fetchSaldo, realizarRecarga } from "../api/saldo/route";
+import { fetchSaldo, realizarRecarga } from "../../services/saldo";
 import { UsuarioLogado } from "../../../types";
 
 export default function Dashboard() {

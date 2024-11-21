@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { cadastroUsuario } from "../api/saldo/route";
+import { cadastroUsuario } from "../../services/saldo";
 import Image from "next/image";
 import { FormDataCadastro } from "../../../types";
 

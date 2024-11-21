@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { fetchClientes } from "../api/saldo/route";
+import { fetchClientes } from "../../services/saldo";
 import { Cliente } from "../../../types";
 
 export default function AdminDashboard() {

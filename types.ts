@@ -34,3 +34,21 @@ export interface Cliente {
     login: string;
     senha: string;
   }
+
+  export interface UsuarioLogado {
+    id_cliente: number;
+    nome: string;
+  }
+  
+  export interface Transacao {
+    tipo: string;
+    valor: number;
+    data: string;
+  }
+  
+ export interface Abastecimento {
+    base: string | null;
+    energia_utilizada: number;
+    custo: number;
+    data: string;
+  }

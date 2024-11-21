@@ -4,7 +4,7 @@ import Cabecalho from "@/components/Cabecalho/Cabecalho";
 import Rodape from "@/components/Rodape/Rodape";
 
 export const metadata: Metadata = {
-  title: "Voltz",
+  title: "bOLSONARO",
   description: "Ajudando o mundo",
 };
 

@@ -4,12 +4,12 @@ Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentáve
 
 ## Tecnologias utilizadas
 
-- **Next.js**: Framework React para construção de aplicações web rápidas e escaláveis.
-- **TailwindCSS**: Framework CSS para estilização rápida e responsiva.
-- **TypeScript**: Tipagem estática para melhorar a qualidade do código.
-- **Node.js**: Ambiente de execução JavaScript no backend.
-- **PostCSS**: Gerenciamento e processamento de estilos.
-- **ESLint**: Ferramenta para linting e padronização do código.
+- **Next.js**
+- **TailwindCSS**
+- **TypeScript**
+- **Node.js**
+- **PostCSS**
+- **ESLint**
   
 ## Estrutura do projeto
 
@@ -78,7 +78,7 @@ Diretório principal contendo todo o código do projeto.
 ------
 
 ### Link de apresentação do projeto Voltz! 
-(para possivel venda do projeto)
+(feito para demonstrar de forma mais visual o projeto)
 
 - **`LINK:`** [https://youtu.be/KKU3hpOQ470](https://youtu.be/KKU3hpOQ470)
 

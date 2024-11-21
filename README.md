@@ -1,8 +1,8 @@
-# Voltz - Energia Sustentável para um Futuro Melhor
+# Voltz - Energia sustentável para um futuro melhor
 
-Bem-vindo ao repositório do **Voltz**, um projeto focado em energia sustentável, que oferece soluções de carregamento solar para veículos elétricos e ferramentas para monitoramento de consumo de energia de maneira acessível e prática.
+Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentável, que oferece soluções de carregamento por energia solar!
 
-## Tecnologias Utilizadas
+## Tecnologias utilizadas
 
 - **Next.js**: Framework React para construção de aplicações web rápidas e escaláveis.
 - **TailwindCSS**: Framework CSS para estilização rápida e responsiva.
@@ -10,8 +10,8 @@ Bem-vindo ao repositório do **Voltz**, um projeto focado em energia sustentáve
 - **Node.js**: Ambiente de execução JavaScript no backend.
 - **PostCSS**: Gerenciamento e processamento de estilos.
 - **ESLint**: Ferramenta para linting e padronização do código.
-
-## Estrutura do Projeto
+  
+## Estrutura do projeto
 
 ### **`/src`**
 
@@ -31,22 +31,64 @@ Diretório principal contendo todo o código do projeto.
 - **`Cabecalho.tsx`**: Componente para o cabeçalho do site, incluindo a navegação.
 - **`Rodape.tsx`**: Componente para o rodapé do site.
 
-#### Outros Arquivos Importantes
+#### Outros arquivos importantes
 
 - **`globals.css`**: imports do tailwind para estilização do projeto.
 - **`layout.tsx`**: Layout usado nas páginas.
 - **`tailwind.config.js`**: Configurações do TailwindCSS (estilização do projeto).
 - **`next.config.mjs`**: Configurações do Next.js.
 
+------
+
 ### Deploy na vercel
 
-[https://voltz-eta.vercel.app](https://voltz-eta.vercel.app)
+- **`LINK:`** [https://voltz-eta.vercel.app](https://voltz-eta.vercel.app)
+  
+------
 
-### Contato
+### Link para o vídeo de apresentação do Front-End
 
-Caso tenha dúvidas ou sugestões, entre em contato:
+- **`FALTA COLOCAR AQUI !!!!!!!!!!!!`**
 
-    E-mail: voltzenergia01@gmail.com
-    Telefone: (11) 98683-9381
+------
+
+### Links para os repositório das API's e do Front-End 
+(script para o banco de dados está incluso em ambas as API's)
+
+- **`FRONT:`** [https://github.com/leonardobianchii/voltz](https://github.com/leonardobianchii/voltz)
+
+- **`PYTHON:`** [https://github.com/leonardobianchii/voltz_py](https://github.com/leonardobianchii/voltz_py)
+
+- **`JAVA:`** [https://github.com/AngelloTDC/voltz-java](https://github.com/AngelloTDC/voltz-java)
+
+------
+
+### Link de apresentação do projeto de Python 
+(caso queira conferir o funcionamento)
+
+- **`LINK:`** [https://youtu.be/ZmoR8E8wYGI](https://youtu.be/ZmoR8E8wYGI)
+
+------
+
+### Link de apresentação do projeto de Java 
+(caso queira conferir o funcionamento)
+
+- **`FALTA COLOCAR AQUI !!!!!!!!!!!!`**
+
+------
+
+### Link de apresentação do projeto Voltz! 
+(para possivel venda do projeto)
+
+- **`LINK:`** [https://youtu.be/KKU3hpOQ470](https://youtu.be/KKU3hpOQ470)
+
+------
+
+### Contato para falar sobre o projeto
+
+- **`EMAIL:`** voltzenergia01@gmail.com
+
+- **`TELEFONE`**  (11) 98683-9381
+
 
 

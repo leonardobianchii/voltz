@@ -1,97 +1,23 @@
-import { CadastroUsuario, LoginUsuario, UsuarioResponse } from "../../../../types";
+import { NextResponse } from "next/server";
+import { cadastroUsuario, loginUsuario } from "../../../services/saldo";
 
-export const cadastroUsuario = async (dados: CadastroUsuario): Promise<UsuarioResponse> => {
-  const response = await fetch(`http://127.0.0.1:5000/api/cadastro`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(dados),
-  });
+export async function POST(request: Request) {
+  const url = new URL(request.url);
+  const path = url.pathname;
 
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(error.erro || "Erro ao realizar cadastro.");
-  }
-
-  return await response.json();
-};
-
-export const loginUsuario = async (dados: LoginUsuario): Promise<UsuarioResponse> => {
-  const response = await fetch(`http://127.0.0.1:5000/api/login`, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(dados),
-  });
-
-  if (!response.ok) {
-    const error = await response.json();
-    throw new Error(error.erro || "Erro ao realizar login.");
-  }
-
-  return await response.json();
-};
-
-export const fetchSaldo = async (id_cliente: number) => {
-  const response = await fetch(`http://127.0.0.1:5000/api/saldo/${id_cliente}`);
-  if (!response.ok) {
-    throw new Error("Erro ao carregar saldo.");
-  }
-  return await response.json();
-};
-
-export const fetchHistoricoTransacoes = async (id_cliente: number) => {
-  const response = await fetch(
-    `http://127.0.0.1:5000/api/historico_transacoes/${id_cliente}`
-  );
-  if (!response.ok) {
-    throw new Error("Erro ao carregar histórico de transações.");
-  }
-  return await response.json();
-};
-
-export const fetchHistoricoAbastecimento = async (id_cliente: number) => {
-  const response = await fetch(
-    `http://127.0.0.1:5000/api/historico_abastecimento/${id_cliente}`
-  );
-  if (!response.ok) {
-    throw new Error("Erro ao carregar histórico de abastecimento.");
-  }
-  return await response.json();
-};
-
-export const realizarRecarga = async (dados: {
-  id_cliente: number;
-  tipo: string;
-  valor: number;
-  id_base: number | null;
-}) => {
-  const response = await fetch(
-    `http://127.0.0.1:5000/api/historico_transacoes/${dados.id_cliente}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(dados),
-    }
-  );
-
-  if (!response.ok) {
-    throw new Error("Erro ao realizar recarga.");
-  }
-
-  return await response.json();
-};
-
-export const fetchClientes = async () => {
   try {
-    const response = await fetch("http://localhost:8080/clientes");
-    if (!response.ok) {
-      throw new Error(
-        `Erro ao buscar clientes: ${response.status} - ${response.statusText}`
-      );
+    const body = await request.json();
+
+    if (path.endsWith("cadastro")) {
+      const result = await cadastroUsuario(body);
+      return NextResponse.json(result);
+    } else if (path.endsWith("login")) {
+      const result = await loginUsuario(body);
+      return NextResponse.json(result);
     }
-    const data = await response.json();
-    return data;
+
+    return NextResponse.json({ error: "Rota inválida." }, { status: 404 });
   } catch (error) {
-    console.error("Erro no fetchClientes:");
-    throw error;
+    return NextResponse.json({ error: (error as Error).message }, { status: 500 });
   }
-};
+}

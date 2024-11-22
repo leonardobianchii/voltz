@@ -66,7 +66,7 @@ Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentáve
 ### Link de apresentação do projeto de Python 
 (caso queira conferir o funcionamento)
 
-- **`LINK:`** [https://youtu.be/ZmoR8E8wYGI](https://youtu.be/ZmoR8E8wYGI)
+- **`LINK:`** [https://youtu.be/eBPi6mRXCb8](https://youtu.be/eBPi6mRXCb8)
 
 ------
 

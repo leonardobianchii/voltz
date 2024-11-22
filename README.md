@@ -48,7 +48,7 @@ Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentáve
 
 ### Link para o vídeo de apresentação do Front-End
 
-- **`FALTA COLOCAR AQUI !!!!!!!!!!!!`**
+- **`LINK:`** [https://youtu.be/kq3cdOLKmmY](https://youtu.be/kq3cdOLKmmY)
 
 ------
 

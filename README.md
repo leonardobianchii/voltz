@@ -84,6 +84,23 @@ Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentáve
 
 ------
 
+## Função importante para o Banco MySQL (JAVA)
+
+- Em `application.properties` verifique o ROOT e a SENHA
+- para que esteja de acordo com o MySQL local (banco de dados local).
+
+- Para mais duvidas acesse o repositório de JAVA.
+
+
+## Função importante para o banco MySQL (Python)
+
+- Em `crud.py` é necessário mudar o ROOT e a SENHA 
+- para que esteja de acordo com o MySQL local (banco de dados local).
+    
+- Para mais duvidas acesse o repositório de Python.
+
+------
+
 ### Contato para falar sobre o projeto
 
 - **`EMAIL:`** voltzenergia01@gmail.com

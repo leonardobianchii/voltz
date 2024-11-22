@@ -2,6 +2,13 @@
 
 Bem-vindo ao repositório da **Voltz**, um projeto focado em energia sustentável, que oferece soluções de carregamento por energia solar!
 
+## Equipe do Projeto
+
+| <img src="public/img/angello.png" alt="Angello" width="150"/> | <img src="public/img/caua.png" alt="caua2" width="150"/> | <img src="public/img/leonardo.png" alt="leonardo" width="150"/> |
+|-----------------------------------------|--------------------------------------|------------------------------------------|
+| **Angello Turano**                      | **Cauã Sanches**                     | **Leonardo Bianchi**                     |
+| **RM: 556511**                          | **RM:558317**                        | **RM:558576**                            |
+
 ## Tecnologias utilizadas
 
 - **Next.js**
